@@ -3,10 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Shop</title>
+  <title>My Shop – Atlas Tote Bag</title>
+  <meta name="description" content="Handmade leather tote bag, made in Morocco.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>My Shop</h1>
-  <p>Coming soon.</p>
+
+  <!-- Top bar: shop name -->
+  <header class="topbar">
+    <a href="#" class="logo">My Shop</a>
+    <a href="#order" class="topbar-link">Order</a>
+  </header>
+
+  <main>
+    <!-- Product: picture on one side, details on the other -->
+    <section class="product">
+      <div class="product-image">
+        <!-- A simple drawing of a bag. Replace it later with a real photo:
+             <img src="images/bag.jpg" alt="Atlas Tote Bag"> -->
+        <svg viewBox="0 0 200 200" role="img" aria-label="Atlas Tote Bag">
+          <path d="M70 70 C70 35, 130 35, 130 70" fill="none" stroke="#7a4a2a" stroke-width="8"/>
+          <rect x="40" y="70" width="120" height="100" rx="12" fill="#c8814e"/>
+          <rect x="40" y="70" width="120" height="18" rx="6" fill="#a8683b"/>
+        </svg>
+      </div>
+
+      <div class="product-info">
+        <p class="tag">Handmade in Morocco</p>
+        <h1>Atlas Tote Bag</h1>
+        <p class="price">450 MAD</p>
+        <p class="description">
+          A soft leather tote, stitched by hand. Big enough for a laptop,
+          light enough for every day.
+        </p>
+
+        <ul class="features">
+          <li>100% real leather</li>
+          <li>Fits a 15" laptop</li>
+          <li>Cash on delivery everywhere in Morocco</li>
+        </ul>
+
+        <a id="order" class="button" href="#">Order now</a>
+        <p class="note">Delivery in 2 to 4 days. Pay when you receive it.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Shop</p>
+  </footer>
+
 </body>
 </html>
