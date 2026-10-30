@@ -43,7 +43,23 @@
           <li>Cash on delivery everywhere in Morocco</li>
         </ul>
 
-        <a id="order" class="button" href="#">Order now</a>
+        <!-- Order form: script.js turns it into a WhatsApp message -->
+        <form id="order" class="order-form">
+          <label>
+            Quantity
+            <input id="quantity" type="number" min="1" max="10" value="1" required>
+          </label>
+          <label>
+            Your name
+            <input id="name" type="text" placeholder="e.g. Sara" required>
+          </label>
+          <label>
+            City
+            <input id="city" type="text" placeholder="e.g. Casablanca" required>
+          </label>
+          <p class="total">Total: <span id="total">450</span> MAD</p>
+          <button type="submit" class="button">Order on WhatsApp</button>
+        </form>
         <p class="note">Delivery in 2 to 4 days. Pay when you receive it.</p>
       </div>
     </section>
@@ -52,6 +68,8 @@
   <footer class="footer">
     <p>&copy; 2026 My Shop</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
